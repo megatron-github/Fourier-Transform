@@ -50,6 +50,7 @@ function fourierEpicycles() {
 		stroke(255);
 	}
 	// animate the epicycles
+	textSize(15);
 	strokeWeight(2);
 	beginShape();
 	noFill();
@@ -71,6 +72,11 @@ function fourierEpicycles() {
 function setup() {
 	createCanvas(W, H);
 	background(0);
+	rectMode(CENTER);
+	stroke(255);
+	fill(255);
+	textSize(W / 15);
+	text("Drag Your Mouse and Draw Something", 5 * W / 12, H / 2, 2 * W / 3, H / 2);
 }
 function draw() {
 	// put drawing code here
@@ -90,4 +96,7 @@ function windowResized() {
 	H = window.innerHeight;
 	resizeCanvas(W, H);
 	background(0);
+	fill(255);
+	textSize(W / 15);
+	text("Drag Your Mouse and Draw Something", 5 * W / 12, H / 2, 2 * W / 3, H / 2);
 }
